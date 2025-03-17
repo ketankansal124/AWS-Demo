@@ -4,7 +4,7 @@ const ip=require("ip");
 
 const app =express();
 
-app.get("/ping",(req,res)=>{
+app.get("/",(req,res)=>{
     return res.json({
         message:"pong",
         serverAddress:ip.address()
